@@ -213,6 +213,13 @@ div.hero{
     height: 100vh;
     background-position: top center;
     background-size: cover;
+    z-index: -1;
+    filter: blur(0px);
+}
+
+.loading-text{
+    font-size: 50px;
+    color: #fff;
 }
 
 div.contenido-header{
@@ -230,6 +237,10 @@ nav.redes-sociales a{
 }
 nav.redes-sociales a:last-child{
     margin-right: 0px;
+}
+
+.naranja{
+    color: #FE4918;
 }
 
 @media only screen and (min-width: 768px){
@@ -536,6 +547,19 @@ ul.lista-invitados li{
     opacity: 0;
 }
 
+
+/* MAPA */
+
+.mapa{
+    width: 100%;
+    overflow: hidden;
+}
+
+.mapa iframe{
+    width: 100%;
+    max-height: 600px;
+}
+
 /*-------------------CONTADOR-------------------*/
 .parallax::before{
 
@@ -630,7 +654,9 @@ div.tabla-precio ul li{
     text-transform: uppercase;
     color: #868686;
     line-height: 26px;
+    
 }
+
 
 div.tabla-precio ul li::before{
     font-family: 'FontAwesome';
@@ -638,7 +664,7 @@ div.tabla-precio ul li::before{
     vertical-align: top;
     padding: 0 5px;
     font-size: 20px;
-    color: green;
+    color: rgb(216, 50, 0);
     -webkit-font-smoothing: antialiased;
     content: '\f00c';
 }

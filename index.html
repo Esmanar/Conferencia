@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="es">
 
 <head>
   <meta charset="utf-8">
@@ -25,6 +25,7 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
+  
   <header class="site-header">
     <div class="hero">
       <div class="contenido-header">
@@ -40,13 +41,15 @@
               <p class="ciudad"> <i class="fa fa-map-marker-alt"></i> Santo Domingo</p>
           </div>
           <h1 class="nombre-sitio">GDLWebCamp</h1>
-          <p class="slogan">La mejor conferencia de <span>diseño web</span></p>
+          <p class="slogan">La mejor conferencia de <span class="naranja">diseño web</span></p>
+          
         </div>
 
       </div>
     </div>
+    
   </header>
-
+  
   <div class="barra">
     <div class="contenedor clearfix">
       <div class="logo">
@@ -58,9 +61,9 @@
         <span></span>
       </div>
       <nav class="navegacion-principal">
-        <a href="#">Conferencia</a>
-        <a href="#">Calendario</a>
-        <a href="#">Invitados</a>
+        <a href="#" id="btn-invitados">Invitados</a>
+        <a href="#">Precios</a>
+        <a href="#">Testimonios</a>
         <a href="#">Reservaciones</a>
       </nav>
     </div>
@@ -74,8 +77,8 @@
 
   <section class="programa">
     <div class="contenedor-video">
-      <video autoplay loop poster="">
-        <source src="video/Meeting - 2340.mp4" type="video/mp4">
+      <video loop poster="" autoplay>
+        <source src="video/Meeting.mp4" type="video/mp4">
       </video>
     </div>
 
@@ -111,7 +114,7 @@
     </div><!--Contenido del programa -->
   </section>
 
-  <section class="invitados contenedor seccion">
+  <section class="invitados contenedor seccion" id="invitados">
     <h2>Nuestros Invitados</h2>
     <hr>
     <ul class="lista-invitados clearfix">
@@ -213,7 +216,14 @@
     </div>
   </section>
 
-  <div id="mapa" class="mapa" ></div>
+  <section class="seccion">
+    <h2>Ubicación</h2>
+    <hr>
+    <div id="mapa" class="mapa" >
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3783.99915252182!2d-69.94168038446735!3d18.483697587430406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89ec5148da81%3A0xd795dd4b26306a90!2sAgora+Mall!5e0!3m2!1ses-419!2sdo!4v1521472200492" 
+      width="1600" height="550" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </section>
 
   <section class="seccion ">
     <h2>Testimonios</h2>
@@ -295,7 +305,7 @@
       </div>
     </div>
 
-    <p class="copyright">Todos los derecho e izquierdos Reservados GDLWEBCAMP 2018</p>
+    <p class="copyright">Todos los derecho e izquierdos Reservados GDLWEBCAMP 2021</p>
   </footer>
 
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
@@ -309,6 +319,7 @@
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
   </script>
+  <script src="js/main.js"></script>
   <script src="https://www.google-analytics.com/analytics.js" async defer></script>
 </body>
 
